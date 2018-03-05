@@ -1,0 +1,12 @@
+build
+dist
+*egg-info
+venv
+.ropeproject
+docs/site
+__pycache__
+*~
+site
+*pyc
+.tox
+.cache

@@ -1,3 +1,5 @@
+|Python version| |Build Status|
+
 ============
  exit_codes
 ============
@@ -22,3 +24,8 @@ It's simple to use:
       else:
           # Otherwise, return the appropriate error code
           return exit_codes.IO_ERR
+
+.. |Python version| image:: https://img.shields.io/badge/Python_version-2.6+-blue.svg
+   :target: https://www.python.org/
+.. |Build Status| image:: https://travis-ci.org/sixty-north/exit-codes.png?branch=master
+   :target: https://travis-ci.org/sixty-north/exit-codes

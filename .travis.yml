@@ -4,8 +4,6 @@ matrix:
   include:
     - python: 2.6
     - python: 2.7
-    - python: 3.1
-    - python: 3.2
     - python: 3.3
     - python: 3.4
     - python: 3.5
@@ -14,7 +12,6 @@ matrix:
     - python: nightly
   fast_finish: true
   allow_failures:
-    - python: 3.1
     - python: 3.7
     - python: nightly
 

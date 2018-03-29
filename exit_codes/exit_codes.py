@@ -1,53 +1,60 @@
-"""Exit status codes.
+try:
+    from enum import IntEnum as Base
+except ImportError:
+    Base = object
 
-These mimic those on many unixes (and provided by `os`) but make them
-available on all platforms.
-"""
 
-# successful termination
-OK = 0
+class ExitCode(Base):
+    """Exit status codes.
 
-# command line usage error
-USAGE = 64
+    These mimic those on many unixes (and provided by `os`) but make them
+    available on all platforms.
+    """
 
-# data format error
-DATA_ERR = 65
+    # successful termination
+    OK = 0
 
-# cannot open input
-NO_INPUT = 66
+    # command line usage error
+    USAGE = 64
 
-# addressee unknown
-NO_USER = 67
+    # data format error
+    DATA_ERR = 65
 
-# host name unknown
-NO_HOST = 68
+    # cannot open input
+    NO_INPUT = 66
 
-# service unavailable
-UNAVAILABLE = 69
+    # addressee unknown
+    NO_USER = 67
 
-# internal software error
-SOFTWARE = 70
+    # host name unknown
+    NO_HOST = 68
 
-# system error (e.g., can't fork)
-OS_ERR = 71
+    # service unavailable
+    UNAVAILABLE = 69
 
-# critical OS file missing
-OS_FILE = 72
+    # internal software error
+    SOFTWARE = 70
 
-# can't create (user) output file
-CANT_CREATE = 73
+    # system error (e.g., can't fork)
+    OS_ERR = 71
 
-# input/output error
-IO_ERR = 74
+    # critical OS file missing
+    OS_FILE = 72
 
-# temp failure; user is invited to retry
-TEMP_FAIL = 75
+    # can't create (user) output file
+    CANT_CREATE = 73
 
-# remote error in protocol
-PROTOCOL = 76
+    # input/output error
+    IO_ERR = 74
 
-# permission denied
-NO_PERM = 77
+    # temp failure; user is invited to retry
+    TEMP_FAIL = 75
 
-# configuration error
-CONFIG = 78
+    # remote error in protocol
+    PROTOCOL = 76
+
+    # permission denied
+    NO_PERM = 77
+
+    # configuration error
+    CONFIG = 78

@@ -6,8 +6,8 @@ import exit_codes
 
 
 def test_ok():
-    exit_codes.OK
+    exit_codes.ExitCode.OK
 
 
 def test_usage():
-    exit_codes.USAGE
+    exit_codes.ExitCode.USAGE

@@ -15,15 +15,15 @@ It's simple to use:
 
 .. code-block:: python
 
-  import exit_codes
+  from exit_codes import ExitCode
 
   def main():
       if big_operation():
           # If your program exits normally, return OK
-          return exit_codes.OK
+          return ExitCode.OK
       else:
           # Otherwise, return the appropriate error code
-          return exit_codes.IO_ERR
+          return ExitCode.IO_ERR
 
 .. |Python version| image:: https://img.shields.io/badge/Python_version-2.6+-blue.svg
    :target: https://www.python.org/

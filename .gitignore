@@ -11,6 +11,9 @@ site
 .tox
 .cache
 
+.idea
+
+.pytest_cache
 
 # Created by https://www.gitignore.io/api/pycharm
 

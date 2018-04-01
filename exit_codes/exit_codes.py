@@ -58,3 +58,21 @@ class ExitCode(Base):
 
     # configuration error
     CONFIG = 78
+
+
+    # Aliases which have the same name as those in the standard
+    # library os module, without the leading EX_. These are to
+    # allow for easier porting as EX_FOO may be globally replaced
+    # with ExitCode.FOO.  For new code, prefer the easier to read
+    # names above.
+
+    DATAERR = 65
+    NOINPUT = 66
+    NOUSER = 67
+    NOHOST = 68
+    OSERR = 71
+    OSFILE = 72
+    CANTCREAT = 73
+    IOERR = 74
+    TEMPFAIL = 75
+    NOPERM = 77

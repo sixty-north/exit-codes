@@ -9,54 +9,72 @@ class ExitCode(Base):
 
     These mimic those on many unixes (and provided by `os`) but make them
     available on all platforms.
+
+        OK           Successful termination
+        USAGE        Command-line usage error
+        DATA_ERR     Invalid data
+        NO_INPUT     No input provided
+        NO_USER      User unknown
+        NO_HOST      Hostname unknown
+        UNAVAILABLE  Service unavailable
+        SOFTWARE     Internal software error
+        OS_ERR       System error (e.g., can't fork)
+        OS_FILE      File missing
+        CANT_CREATE  Can't create (user) output file
+        IO_ERR       Input/output error
+        TEMP_FAIL    A temporary failure; the user is invited to retry
+        PROTOCOL     A protocol error
+        NO_PERM      Permission denied
+        CONFIG       Configuration error
+
     """
 
-    # successful termination
+    """Successful termination"""
     OK = 0
 
-    # command line usage error
+    """Command-line usage error"""
     USAGE = 64
 
-    # data format error
+    """Invalid data"""
     DATA_ERR = 65
 
-    # cannot open input
+    """No input provided"""
     NO_INPUT = 66
 
-    # addressee unknown
+    """User unknown"""
     NO_USER = 67
 
-    # host name unknown
+    """Hostname unknown"""
     NO_HOST = 68
 
-    # service unavailable
+    """Service unavailable"""
     UNAVAILABLE = 69
 
-    # internal software error
+    """Internal software error"""
     SOFTWARE = 70
 
-    # system error (e.g., can't fork)
+    """System error (e.g., can't fork)"""
     OS_ERR = 71
 
-    # critical OS file missing
+    """File missing"""
     OS_FILE = 72
 
-    # can't create (user) output file
+    """Can't create (user) output file"""
     CANT_CREATE = 73
 
-    # input/output error
+    """Input/output error"""
     IO_ERR = 74
 
-    # temp failure; user is invited to retry
+    """A temporary failure; the user is invited to retry"""
     TEMP_FAIL = 75
 
-    # remote error in protocol
+    """A protocol error"""
     PROTOCOL = 76
 
-    # permission denied
+    """Permission denied"""
     NO_PERM = 77
 
-    # configuration error
+    """Configuration error"""
     CONFIG = 78
 
 

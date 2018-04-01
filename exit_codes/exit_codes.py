@@ -7,7 +7,12 @@ except ImportError:
 class ExitCode(Base):
     """Exit status codes.
 
-    These mimic those on many unixes (and provided by `os`) but make them
+    Note:
+        If the Enum library is available (Python 3.4+) or backports to
+        earlier versions, ExitCodes will be an IntEnum, otherwise
+        ExitCodes will be a regular class with integer class attributes.
+
+    These mimic those on many Unixes (and provided by `os`) but make them
     available on all platforms.
 
         OK           Successful termination
@@ -26,6 +31,10 @@ class ExitCode(Base):
         PROTOCOL     A protocol error
         NO_PERM      Permission denied
         CONFIG       Configuration error
+
+    In addition, aliases with similar names to those provided by the
+    `os` module are provided to ease porting, but they have short and
+    less readable names.
 
     """
 

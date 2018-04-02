@@ -93,13 +93,13 @@ class ExitCode(Base):
     # with ExitCode.FOO.  For new code, prefer the easier to read
     # names above.
 
-    DATAERR = 65
-    NOINPUT = 66
-    NOUSER = 67
-    NOHOST = 68
-    OSERR = 71
-    OSFILE = 72
-    CANTCREAT = 73
-    IOERR = 74
-    TEMPFAIL = 75
-    NOPERM = 77
+    DATAERR = DATA_ERR
+    NOINPUT = NO_INPUT
+    NOUSER = NO_USER
+    NOHOST = NO_HOST
+    OSERR = OS_ERR
+    OSFILE = OS_FILE
+    CANTCREAT = CANT_CREATE
+    IOERR = IO_ERR
+    TEMPFAIL = TEMP_FAIL
+    NOPERM = NO_PERM

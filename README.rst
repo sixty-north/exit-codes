@@ -25,9 +25,7 @@ It's simple to use:
           # Otherwise, return the appropriate error code
           return ExitCode.IO_ERR
 
-.. |Python version| image:: https://img.shields.io/badge/Python_version-2.7-blue.svg
-   :target: https://www.python.org/
-.. |Python version| image:: https://img.shields.io/badge/Python_version-3.5+-blue.svg
+.. |Python version| image:: https://img.shields.io/badge/Python_version-2.7 & 3.5+-blue.svg
    :target: https://www.python.org/
 .. |Build Status| image:: https://travis-ci.org/sixty-north/exit-codes.png?branch=master
    :target: https://travis-ci.org/sixty-north/exit-codes
